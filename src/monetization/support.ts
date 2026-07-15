@@ -9,7 +9,9 @@
  * link out to a payment page the Founder provisions.
  *
  * FOUNDER PROVISIONING (the one thing to set):
- *   Replace SUPPORT_CONFIG.url below with a real supporter checkout page. Any of:
+ *   Replace SUPPORT_CONFIG.url below with a real supporter checkout page AND
+ *   flip SUPPORT_CONFIG.enabled to true. It ships disabled (false) because the
+ *   url is a stub — do not enable until a real checkout page is in place. Any of:
  *     - Ko-fi / Buy Me a Coffee / GitHub Sponsors  (simplest)
  *     - Stripe Payment Link                         (pay-what-you-want)
  *     - Paddle / Lemon Squeezy                      (Merchant of Record; EU VAT)
@@ -32,9 +34,10 @@ export interface SupportConfig {
   enabled: boolean;
 }
 
-// FOUNDER PROVISIONING: replace `url` with a real supporter page before deploy.
+// FOUNDER PROVISIONING: replace `url` with a real supporter page AND flip
+// `enabled` to true before deploy. Ships disabled — the url below is a stub.
 export const SUPPORT_CONFIG: SupportConfig = {
   url: 'https://example.com/support-colibrious',
   provider: 'Support',
-  enabled: true,
+  enabled: false,
 };

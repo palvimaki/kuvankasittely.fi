@@ -563,7 +563,7 @@ function App() {
             <Lock className="h-3.5 w-3.5 text-emerald-700" />
             {t.footerPrivacy}
           </p>
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 sm:justify-end">
             <span>{t.footerOpenSource}</span>
             <a
               href={REPO_URL}
