@@ -4,6 +4,7 @@ import { Dropzone } from './components/Dropzone';
 import { ImageCard } from './components/ImageCard';
 import { InstallHint } from './components/InstallHint';
 import { InstallBanner } from './components/InstallBanner';
+import { SupportCTA } from './components/SupportCTA';
 import { useImageProcessor } from './hooks/useImageProcessor';
 import { useStrings } from './i18n/useStrings';
 import { useWebpEncodeSupport } from './hooks/useWebpEncodeSupport';
@@ -573,6 +574,7 @@ function App() {
               <GithubIcon className="h-3.5 w-3.5" />
               GitHub
             </a>
+            <SupportCTA />
             <span className="text-charcoal/30">·</span>
             <span>{t.footerLicense}</span>
           </div>

@@ -121,6 +121,11 @@ export interface Strings {
   footerOpenSource: string;
   footerLicense: string;
 
+  // Support (monetization)
+  supportCta: string;
+  supportAria: string;
+  supportThanks: string;
+
   // Filenames
   pdfFilename: (n: number) => string;
   downloadSuffix: string;
@@ -231,6 +236,10 @@ const fi: Strings = {
   footerOpenSource: 'Avoin lähdekoodi:',
   footerLicense: 'MIT-lisenssi',
 
+  supportCta: 'Tue',
+  supportAria: 'Tue tätä työkalua',
+  supportThanks: 'Yksityinen ja aina ilmainen. Tukesi pitää sen tällaisena.',
+
   pdfFilename: (n) => `kuvankasittely-${n}-kuvaa.pdf`,
   downloadSuffix: 'kuvankasittely',
   zipFilename: (n) => `kuvankasittely-${n}-kuvaa.zip`,
@@ -339,6 +348,10 @@ const en: Strings = {
   footerPrivacy: 'Private — your images stay on your device. No cookies.',
   footerOpenSource: 'Open source:',
   footerLicense: 'MIT licensed',
+
+  supportCta: 'Support',
+  supportAria: 'Support this tool',
+  supportThanks: 'Private and always free. Your support keeps it that way.',
 
   pdfFilename: (n) => `colibrious-${n}-images.pdf`,
   downloadSuffix: 'colibrious',
