@@ -4,6 +4,7 @@ import { Dropzone } from './components/Dropzone';
 import { ImageCard } from './components/ImageCard';
 import { InstallHint } from './components/InstallHint';
 import { InstallBanner } from './components/InstallBanner';
+import { SupportCTA } from './components/SupportCTA';
 import { useImageProcessor } from './hooks/useImageProcessor';
 import { useStrings } from './i18n/useStrings';
 import { useWebpEncodeSupport } from './hooks/useWebpEncodeSupport';
@@ -562,7 +563,7 @@ function App() {
             <Lock className="h-3.5 w-3.5 text-emerald-700" />
             {t.footerPrivacy}
           </p>
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 sm:justify-end">
             <span>{t.footerOpenSource}</span>
             <a
               href={REPO_URL}
@@ -573,6 +574,7 @@ function App() {
               <GithubIcon className="h-3.5 w-3.5" />
               GitHub
             </a>
+            <SupportCTA />
             <span className="text-charcoal/30">·</span>
             <span>{t.footerLicense}</span>
           </div>
